@@ -1,0 +1,22 @@
+ion-content ion-toolbar {
+  --background: translucent;
+}
+
+button {
+  font-size: 1.2rem;
+  width: 100%;
+  text-align: left;
+}
+
+ion-icon {
+  float: right;
+}
+.ion-text-wrap {
+  text-align: center;
+}
+.ion-text-wrap span {
+  color: red;
+}
+.note {
+  text-align: justify;
+}

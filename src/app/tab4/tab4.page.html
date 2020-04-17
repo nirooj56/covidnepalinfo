@@ -1,0 +1,89 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title color="secondary">
+      Options
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true" class="ion-padding">
+  <ion-grid fixed>
+    <ion-list lines="none">
+      <ion-button
+        expand="block"
+        fill="outline"
+        color="secondary"
+        (click)="presentToast()"
+      >
+        <ion-label>Sync</ion-label>
+        <ion-icon slot="end" name="sync-outline"></ion-icon>
+      </ion-button>
+    </ion-list>
+    <ion-item-divider color="none"></ion-item-divider>
+    <ion-item-divider color="none"></ion-item-divider>
+    <ion-list>
+      <ion-grid>
+        <ion-item button (click)="navigate()" detail lines="none">
+          <ion-icon name="navigate-circle-outline" slot="start"></ion-icon>
+          <ion-label>
+            Other Sources
+          </ion-label>
+        </ion-item>
+        <ion-item
+          button
+          lines="none"
+          (click)="close('https://play.google.com/store/apps/details?id=np.com.nirojbista.covidnepalinfo')"
+        >
+          <ion-icon name="star-half-outline" slot="start"></ion-icon>
+          <ion-label>
+            Rate us on Playstore
+          </ion-label>
+        </ion-item>
+      </ion-grid>
+    </ion-list>
+    <ion-list>
+      <ion-list-header lines="inset">
+        <ion-label>About</ion-label>
+      </ion-list-header>
+      <ion-item lines="none">
+        <ion-label>Version</ion-label>
+        <ion-note item-end>0.1.0-beta (2020)</ion-note>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label>Open Source Licence</ion-label>
+        <ion-note>GNU GPLv3</ion-note>
+      </ion-item>
+      <ion-item lines="none">
+        <ion-label>Source</ion-label>
+        <ion-icon
+          (click)="close('https://github.com/nirooj56/covidnepalinfo')"
+          slot="end"
+          name="logo-github"
+        ></ion-icon>
+      </ion-item>
+    </ion-list>
+    <ion-item-divider color="none"></ion-item-divider>
+    <ion-list>
+      <ion-item lines="none">
+        <ion-label class="ion-text-wrap">
+          <ion-text>
+            <h3>Crafted with <span>❤️</span> by</h3>
+          </ion-text>
+          <p (click)="close('https://nirojbista.com.np')">
+            CYCO
+          </p>
+        </ion-label>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item class="note" lines="none">
+        <ion-label class="ion-text-wrap" color="medium">
+          <br />
+          The Data present in the application has been collected from various
+          sources mentioned above.
+        </ion-label>
+        <ion-note slot="end"> </ion-note>
+      </ion-item>
+    </ion-list>
+  </ion-grid>
+</ion-content>
