@@ -1,6 +1,5 @@
 import { async, ComponentFixture, TestBed } from "@angular/core/testing";
 import { IonicModule } from "@ionic/angular";
-import { ExploreContainerComponentModule } from "../explore-container/explore-container.module";
 
 import { WorldPage } from "./world.page";
 
@@ -11,7 +10,7 @@ describe("WorldPage", () => {
   beforeEach(async(() => {
     TestBed.configureTestingModule({
       declarations: [WorldPage],
-      imports: [IonicModule.forRoot(), ExploreContainerComponentModule],
+      imports: [IonicModule.forRoot()],
     }).compileComponents();
 
     fixture = TestBed.createComponent(WorldPage);
