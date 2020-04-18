@@ -8,55 +8,59 @@ const routes: Routes = [
     component: TabsPage,
     children: [
       {
-        path: "tab1",
+        path: "home",
         children: [
           {
             path: "",
             loadChildren: () =>
-              import("../tab1/tab1.module").then((m) => m.Tab1PageModule),
+              import("../home/home.module").then((m) => m.HomePageModule),
           },
         ],
       },
       {
-        path: "tab2",
+        path: "world",
         children: [
           {
             path: "",
             loadChildren: () =>
-              import("../tab2/tab2.module").then((m) => m.Tab2PageModule),
+              import("../world/world.module").then((m) => m.WorldPageModule),
           },
         ],
       },
       {
-        path: "tab3",
+        path: "information",
         children: [
           {
             path: "",
             loadChildren: () =>
-              import("../tab3/tab3.module").then((m) => m.Tab3PageModule),
+              import("../information/information.module").then(
+                (m) => m.InformationPageModule
+              ),
           },
         ],
       },
       {
-        path: "tab4",
+        path: "options",
         children: [
           {
             path: "",
             loadChildren: () =>
-              import("../tab4/tab4.module").then((m) => m.Tab4PageModule),
+              import("../options/options.module").then(
+                (m) => m.OptionsPageModule
+              ),
           },
         ],
       },
       {
         path: "",
-        redirectTo: "/tabs/tab1",
+        redirectTo: "/tabs/home",
         pathMatch: "full",
       },
     ],
   },
   {
     path: "",
-    redirectTo: "/tabs/tab1",
+    redirectTo: "/tabs/home",
     pathMatch: "full",
   },
 ];

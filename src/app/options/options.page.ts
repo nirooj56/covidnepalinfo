@@ -2,11 +2,11 @@ import { Component } from "@angular/core";
 import { ToastController, NavController } from "@ionic/angular";
 
 @Component({
-  selector: "app-tab4",
-  templateUrl: "tab4.page.html",
-  styleUrls: ["tab4.page.scss"],
+  selector: "app-options",
+  templateUrl: "options.page.html",
+  styleUrls: ["options.page.scss"],
 })
-export class Tab4Page {
+export class OptionsPage {
   constructor(
     public toastController: ToastController,
     public navCtrl: NavController
