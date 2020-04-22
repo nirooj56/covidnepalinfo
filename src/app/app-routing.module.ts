@@ -12,6 +12,18 @@ const routes: Routes = [
     loadChildren: () =>
       import("./sources/sources.module").then((m) => m.SourcesPageModule),
   },
+  {
+    path: 'general-faq',
+    loadChildren: () => import('./general-faq/general-faq.module').then( m => m.GeneralFAQPageModule)
+  },
+  {
+    path: 'myths',
+    loadChildren: () => import('./myths/myths.module').then( m => m.MythsPageModule)
+  },
+  {
+    path: 'symptoms',
+    loadChildren: () => import('./symptoms/symptoms.module').then( m => m.SymptomsPageModule)
+  },
 ];
 @NgModule({
   imports: [

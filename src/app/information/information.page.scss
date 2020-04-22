@@ -1,3 +1,23 @@
 ion-content ion-toolbar {
   --background: translucent;
+  border: none;
+  color: #fff;
+}
+.boxed {
+  height: 270px;
+  border-radius: 0 0 40px 40px;
+  background-color: #365795;
+  color: #fff;
+  box-shadow: 0px 2px 10px 3px #888;
+}
+.sick {
+  margin: 0 0 0 20px;
+  font-size: 15px;
+  font-weight: 400;
+}
+section div {
+  text-align: center;
+}
+ion-button {
+  letter-spacing: 0.1em;
 }

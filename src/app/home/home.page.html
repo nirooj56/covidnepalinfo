@@ -1,9 +1,88 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title color="danger">
-      Home News and Data
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
-<ion-content [fullscreen]="true"> </ion-content>
+<!-- <ion-content [fullscreen]="true"> -->
+<ion-content [fullscreen]="true" color="danger">
+  <ion-header class="ion-no-border">
+    <ion-title>Nepal</ion-title>
+  </ion-header>
+  <div class="boxed">
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <div>
+            <ion-card color="primary">
+              <ion-card-header>
+                <ion-card-subtitle>Total Tested (PCR)</ion-card-subtitle>
+                <ion-card-title>8,773</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <ion-card color="tertiary">
+              <ion-card-header>
+                <ion-card-subtitle>Total Tested (RDT)</ion-card-subtitle>
+                <ion-card-title>27,956</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div>
+            <ion-card color="secondary">
+              <ion-card-header>
+                <ion-card-subtitle>Quarantined</ion-card-subtitle>
+                <ion-card-title>7,067</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <ion-card color="medium">
+              <ion-card-header>
+                <ion-card-subtitle>Isolated</ion-card-subtitle>
+                <ion-card-title>107</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div>
+            <ion-card color="warning">
+              <ion-card-header>
+                <ion-card-subtitle>Confirmed</ion-card-subtitle>
+                <ion-card-title>45</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </div>
+        </ion-col>
+        <ion-col>
+          <div>
+            <ion-card color="success">
+              <ion-card-header>
+                <ion-card-subtitle>Recovered</ion-card-subtitle>
+                <ion-card-title>7</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </div>
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col>
+          <div>
+            <ion-card color="dark">
+              <ion-card-header>
+                <ion-card-subtitle>Dead</ion-card-subtitle>
+                <ion-card-title>0</ion-card-title>
+              </ion-card-header>
+            </ion-card>
+          </div>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ion-content>

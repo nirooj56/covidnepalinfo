@@ -1,21 +1,64 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title color="tertiary">
-      Resources & Info
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
+<ion-content>
+  <div class="boxed">
+    <ion-header class="ion-no-border">
+      <ion-toolbar>
+        <ion-title>
+          Resources & Info
+        </ion-title>
+      </ion-toolbar>
+    </ion-header>
+    <section>
+      <ion-grid>
+        <ion-list-header>
+          <ion-label color="light">
+            Are you feeling Sick?
+          </ion-label>
+        </ion-list-header>
+        <p class="sick">
+          If you feel sick then View the Symptoms of Covid-19, and please call
+          the authorities immediately for further consultations.
+        </p>
+        <ion-item-divider color="none"></ion-item-divider>
+        <div>
+          <ion-button color="danger" shape="round" href="tel:1133">
+            <ion-icon name="call-outline" slot="start"></ion-icon>Call
+            Now</ion-button
+          >
+          <ion-button color="secondary" shape="round" (click)="symptoms()">
+            <ion-icon name="thermometer-outline" slot="start"></ion-icon
+            >Symptoms</ion-button
+          >
+        </div>
+      </ion-grid>
+    </section>
+  </div>
 
-<ion-content [fullscreen]="true">
-  <ion-grid fixed>
-    <ion-list>
-      <ion-item-divider color="none"></ion-item-divider>
-      <ion-item button detail lines="none">
-        <ion-icon name="navigate-circle-outline" slot="start"></ion-icon>
-        <ion-label>
-          What is COVID-19?
-        </ion-label>
-      </ion-item>
-    </ion-list>
-  </ion-grid>
+  <ion-card class="action-card">
+    <img class="header-img" src="/assets/faq.png" />
+    <ion-card-header>
+      <ion-card-title>General FAQ</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>General Information about the Covid-19 Virus.</p>
+      <ion-button
+        color="tertiary"
+        expand="block"
+        slot="end"
+        (click)="navigate()"
+        >View</ion-button
+      >
+    </ion-card-content>
+  </ion-card>
+  <ion-card class="action-card">
+    <img class="header-img" src="/assets/myths.png" />
+    <ion-card-header>
+      <ion-card-title>Facts and Myths</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p>Check out some of the Speculations & Myths around COVID-19.</p>
+      <ion-button color="tertiary" expand="block" slot="end" (click)="myths()"
+        >View</ion-button
+      >
+    </ion-card-content>
+  </ion-card>
 </ion-content>
