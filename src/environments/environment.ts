@@ -4,16 +4,6 @@
 
 export const environment = {
   production: false,
-  firebaseConfig = {
-    apiKey: "AIzaSyCN2uhav_jKZbljiYDI1taHGnQwPEdM58I",
-    authDomain: "covidnepalinfo-68827.firebaseapp.com",
-    databaseURL: "https://covidnepalinfo-68827.firebaseio.com",
-    projectId: "covidnepalinfo-68827",
-    storageBucket: "covidnepalinfo-68827.appspot.com",
-    messagingSenderId: "679557202741",
-    appId: "1:679557202741:web:144457152936e17df3427c",
-    measurementId: "G-CBZ61Q0BE1"
-  };
 };
 
 /*
