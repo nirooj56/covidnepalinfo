@@ -4,7 +4,7 @@ import { FormsModule } from "@angular/forms";
 import { IonicModule } from "@ionic/angular";
 import { GeneralFAQPageRoutingModule } from "./general-faq-routing.module";
 import { GeneralFAQPage } from "./general-faq.page";
-import { AccordionComponent } from "../components/accordion/accordion.component";
+import { SharedModule } from "../shared.module";
 
 @NgModule({
   imports: [
@@ -12,7 +12,8 @@ import { AccordionComponent } from "../components/accordion/accordion.component"
     FormsModule,
     IonicModule,
     GeneralFAQPageRoutingModule,
+    SharedModule,
   ],
-  declarations: [GeneralFAQPage, AccordionComponent],
+  declarations: [GeneralFAQPage],
 })
 export class GeneralFAQPageModule {}

@@ -4,10 +4,16 @@ import { FormsModule } from "@angular/forms";
 import { IonicModule } from "@ionic/angular";
 import { MythsPageRoutingModule } from "./myths-routing.module";
 import { MythsPage } from "./myths.page";
-import { AccordionComponent } from "../components/accordion/accordion.component";
+import { SharedModule } from "../shared.module";
 
 @NgModule({
-  imports: [CommonModule, FormsModule, IonicModule, MythsPageRoutingModule],
-  declarations: [MythsPage, AccordionComponent],
+  imports: [
+    CommonModule,
+    FormsModule,
+    IonicModule,
+    MythsPageRoutingModule,
+    SharedModule,
+  ],
+  declarations: [MythsPage],
 })
 export class MythsPageModule {}
