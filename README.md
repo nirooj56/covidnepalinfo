@@ -5,7 +5,6 @@
   COVID-19 Nepal
   <br>
    <img src="https://img.shields.io/travis/nirooj56/covidnepalinfo?style=for-the-badge" alt="Travis">
-  <img src="  https://img.shields.io/scrutinizer/quality/g/nirooj56/covidnepalinfo/master?style=for-the-badge" alt="Scrutinizer code quality">
   <a href="https://github.com/nirooj56/covidnepalinfo/releases"><img src="https://img.shields.io/github/v/release/nirooj56/covidnepalinfo?include_prereleases&style=for-the-badge" alt="Release"></a>
   <a href="https://github.com/nirooj56/nepaliunicode/blob/master/Licence"><img src="https://img.shields.io/github/license/nirooj56/covidnepalinfo?style=for-the-badge" alt="License"></a>
   <br>
