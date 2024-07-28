@@ -12,6 +12,9 @@
 
 <p align="center">An Handy Android application to keep track of the Covid-19 cases in Nepal and the World along with Information about the Virus.</p>
 
+## NOTICE 
+Covid is gone, so is the Project.
+
 ## To-Do's
 
 Create the Project.
@@ -32,7 +35,6 @@ Create the Project.
 - **Name**: Nirooj Bista
 - **Website**: http://www.nirojbista.com.np
 - **E-mail**: info@nirojbista.com.np
-- **[Facebook](https://www.facebook.com/niroj56) - [Twitter](https://www.twitter.com/nirooj56) - [Google+](https://plus.google.com/+bistanirooj) - [Linkedin](https://www.linkedin.com/in/nirooj56)**
 
 ## License
 
